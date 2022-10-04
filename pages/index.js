@@ -1,18 +1,20 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div >
-      <h1>/pages/index.js</h1>
+    <div>
+      <h1>HOME</h1>
       <ul>
-        <li><a href='/sub'>/pages/sub/index.js</a></li>
-        <li><a href='/sub/about'>/pages/sub/about.js</a></li>
-        <li><a href='/sub/1'>/pages/sub/[id].js</a></li>
-        <li><a href='/sub/2'>/pages/sub/[id].js</a></li>
-        <li><a href='/sub/fetch'>/pages/sub/fetch.js</a></li>
+        <li>
+          <a href="/sub">profile</a>
+        </li>
+        <li>
+          <Link href={'./sub'}>profile2</Link>
+        </li>
       </ul>
     </div>
-  )
+  );
 }
